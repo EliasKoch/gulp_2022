@@ -33,6 +33,8 @@ export const path = {
         html:`${buildFolder}/`,
         files:`${buildFolder}/files/`,
 
+        twig:`${buildFolder}/twig/`,
+
 
     },
 
@@ -43,6 +45,7 @@ export const path = {
         js:`${srcFolder}/assets_src/js/app.js`,
         vue:`${srcFolder}/assets_src/vue/vueApp.js`,
         html:`${srcFolder}/*.html`,
+        twig:`${srcFolder}/*.twig`,
         files:`${srcFolder}/files/**/*.*`,
         fonts:`${srcFolder}/assets_src/fonts/**/*.*`,
         svgIcons:`${srcFolder}/assets_src/svgIcons/*.svg`
@@ -54,6 +57,7 @@ export const path = {
         scss:[`${srcFolder}/assets_src/styles/**/*.*`],
         files:`${srcFolder}/files/**/*.*`,
         html:`${srcFolder}/**/*.html`,
+        twig:`${srcFolder}/**/*.twig`,
         fonts:`${srcFolder}/assets_src/fonts/**/*.*`,
     },
     clean:[`${buildFolder}/assets/css`,`${buildFolder}/assets/js`,`${buildFolder}/assets/vue`,`${buildFolder}/file` ,`${srcFolder}/assets/css`,`${srcFolder}/assets/js`,`${srcFolder}/assets/vue`],

@@ -5,9 +5,9 @@
   "main": "gulpfile.js",
   "type": "module",
   "scripts": {
-    "svgSprite":"gulp svgSprite",
-    "dev":"gulp",
-    "build":"gulp build --build"
+    "svgSprite": "gulp svgSprite",
+    "dev": "gulp",
+    "build": "gulp build --build"
   },
   "author": "",
   "license": "ISC",
@@ -31,6 +31,7 @@
     "gulp-sass-glob": "^1.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-svg-sprite": "^1.5.0",
+    "gulp-twig": "^1.2.0",
     "gulp-webp": "^4.0.1",
     "path": "^0.12.7",
     "sass": "^1.49.0",
