@@ -45,7 +45,7 @@ export const path = {
         js:`${srcFolder}/assets_src/js/app.js`,
         vue:`${srcFolder}/assets_src/vue/vueApp.js`,
         html:`${srcFolder}/*.html`,
-        twig:`${srcFolder}/*.twig`,
+        twig:`${srcFolder}/twig/*.twig`,
         files:`${srcFolder}/files/**/*.*`,
         fonts:`${srcFolder}/assets_src/fonts/**/*.*`,
         svgIcons:`${srcFolder}/assets_src/svgIcons/*.svg`
