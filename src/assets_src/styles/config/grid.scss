@@ -1,6 +1,6 @@
 @use "sass:math";
 
-$mobile_first: true;
+$mobile_first: false;
 
 $xs: 560px;
 $sm: 780px;
@@ -10,9 +10,9 @@ $lg: 1280px;
 
 $field_zero: 16px;
 $gap_zero: 16px;
-$field_xs: 32px;
+$field_xs: 60px;
 $gap_xs: 16px;
-$field_sm: 32px;
+$field_sm: 60px;
 $gap_sm: 16px;
 $field_md: 80px;
 $gap_md: 20px;
@@ -20,7 +20,7 @@ $field_lg: 100px;
 $gap_lg: 30px;
 
 
-$container: 100%;
+$container: 1164px;
 
 @mixin from($break_point) {
   $media: '';

@@ -1,0 +1,73 @@
+@import "mixins";
+@import "grid";
+@import "libs";
+@import "fonts";
+input, textarea, button,option,select {
+  outline: none;
+  -webkit-appearance: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  background: none;
+  resize: none;
+  font-family: 'SF Pro Display';
+  font-size: 16px;
+  line-height: 1.2;
+
+  &:focus:required:invalid {
+    border-color: red;
+  }
+  &:required:valid {
+    border-color:green;
+  }
+}
+//
+*,*::before, *::after {
+  //font-family: $userFont;
+  //font-size: $fontSize;
+  //line-height: $lineHeight;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  color: #494949;
+  position: relative;
+  margin: 0;
+  font-family: 'SF Pro Display';
+  line-height: 1.2;
+
+}
+
+ul, h1, h2, h3, h4, h5,p,ul,ol,li,a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  color: inherit
+}
+
+
+[disabled]{
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+
+[hidden]{
+  display: none !important
+}
+
+
+
+
+.container{
+  @include wrapper;
+}

@@ -1,10 +1,7 @@
 @import "config/config";
-@import "config/mixins";
-@import "config/grid";
-@import "config/libs";
 
-@import "/blocks/**/*";
+@import "blocks/**/*";
 
-body{
-  background: #000;
-}
+
+
+
