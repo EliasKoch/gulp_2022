@@ -1,0 +1,81 @@
+<footer>
+    <div class="apps">
+
+        <div class="container">
+            <div class="apps__container">
+                <div class="appIcon">
+{#                    <img  width="45.5"height="94.5" src="/src/assets/img/content/iphoneX.png" alt="">#}
+                </div>
+                <div class="apps__label title title--h5">
+                    Установи наше приложение и заказывай любимую еду с доставкой ещё быстрее!
+                </div>
+                <div class="apps__links">
+                    <a href="{{ links.appstore }}"><img height="44" width="153"
+                                                        src="/src/assets/img/svgIcons/icons.svg#appstore"
+                                                        alt="link-appstore"></a>
+                    <a href="{{ links.googleplay }}"><img height="44" width="152"
+                                                          src="/src/assets/img/svgIcons/icons.svg#googleplay"
+                                                          alt="link-appstore"></a>
+                    <a href="{{ links.appgalery }}"><img height="44" width="144"
+                                                         src="/src/assets/img/svgIcons/icons.svg#appgalery"
+                                                         alt="link-appstore"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__logo logo">
+                    <a href="/"><img height="68" width="208" class="logo" src="/src/assets/img/svg/logo1.svg"
+                                     alt="suvlaki_logo"></a>
+                    <img height="68" width="208" class="logo" src="/src/assets/img/svg/logo1.svg" alt="suvlaki_logo">
+                </div>
+                <ul class="footer__menu menu menu--white">
+                    {% for menuItem in bottomMenu %}
+                        {% if menuItem.dropMenu %}
+                            <li class="menu__item menu__item--dropDown dropDown">
+                                {{ menuItem.title }}
+                                <div class="dropDown__box">
+                                    <div class="dropDown__container">
+                                        <ul class="dropDown__list">
+                                            {% for dropItem  in menuItem.dropMenu %}
+                                                <li class="dropDown__listItem "><a
+                                                            href="{{ dropItem.href }}">{{ dropItem.title }}</a></li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        {% else %}
+                            <li class="menu__item">
+                                <a href="{{ menuItem.href }}">{{ menuItem.title }}</a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+
+                </ul>
+                <div class="footer__tp">
+                    <div class="footer__title">
+                        Служба поддержки
+                    </div>
+                    <div class="footer__shopInfo shopInfo">
+                        <span class="shopInfo__icon">
+                             <svg viewBox="0 0 16 16">
+                                  <use xlink:href="/src/assets/img/svgIcons/icons.svg#Calling"></use>
+                             </svg>
+                        </span>
+                        <div class="shopInfo__info">
+                            <a  href="tel:{{ shopInfo.phone }}" class="shopInfo__phone">{{ shopInfo.phone }}</a>
+                            <span class="shopInfo__open">{{ shopInfo.open }} </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</footer>

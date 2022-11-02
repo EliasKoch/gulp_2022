@@ -1,0 +1,10 @@
+<section class="breadCrumbs">
+    <div class="container">
+        <ul class="breadCrumbs__list">
+            {% for breadcrumb in breadcrumbs|slice(0, breadcrumbs|length -1)  %}
+                <li class="breadCrumbs__listItem"><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+            {% endfor %}
+            <li class="breadCrumbs__listItem"><span>{{breadcrumbs|last.text}}</span></li>
+        </ul>
+    </div>
+</section>

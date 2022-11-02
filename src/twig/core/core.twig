@@ -5,15 +5,24 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    {%  block styles %}{% endblock %}
-    <title>{{ title | default("Home")  }}</title>
+    {% block styles %}{% endblock %}
+    <title>{{ title | default("Home") }}</title>
     <link rel="stylesheet" href="/src/assets/css/app.css">
 
 </head>
+{% include "header.twig" %}
 <body>
-    {%  block body %}{% endblock %}
+<main>
+    {% block body %}{% endblock %}
+
+</main>
+<div id="modal" class="modal">
+
+</div>
+{% include "footer.twig" %}
 <script src="/src/assets/js/app.js"></script>
-    {%  block sctipts %}{% endblock %}
+<script src="/src/assets/vue/vueApp.js"></script>
+{% block sctipts %}{% endblock %}
 <!--<script src="/src/assets/vue/vueApp.js"></script>-->
 </body>
 </html>
