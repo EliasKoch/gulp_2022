@@ -7,6 +7,7 @@ const srcFolder = './src';
 const name ={
     js:'app.js',
     css:'app.css',
+    cssHeader:'header.css',
     vue:'vueApp.js'
 }
 
@@ -33,7 +34,7 @@ export const path = {
         html:`${buildFolder}/`,
         files:`${buildFolder}/files/`,
 
-        twig:`${buildFolder}/twig/`,
+        twig:`${buildFolder}/`,
 
 
     },
@@ -42,8 +43,9 @@ export const path = {
         img:`${srcFolder}/assets_src/img/**/*.{jpeg,jpg,png,gif,webp}`,
         svg:`${srcFolder}/assets_src/img/**/*.svg`,
         scss:`${srcFolder}/assets_src/styles/style.scss`,
+        scssHeader:`${srcFolder}/assets_src/styles/header.scss`,
         js:`${srcFolder}/assets_src/js/app.js`,
-        vue:`${srcFolder}/assets_src/vue/vueApp.js`,
+        vue:`${srcFolder}/assets_src/vue/*.js`,
         html:`${srcFolder}/*.html`,
         twig:`${srcFolder}/twig/*.twig`,
         files:`${srcFolder}/files/**/*.*`,
@@ -57,12 +59,13 @@ export const path = {
         scss:[`${srcFolder}/assets_src/styles/**/*.*`],
         files:`${srcFolder}/files/**/*.*`,
         html:`${srcFolder}/**/*.html`,
-        twig:`${srcFolder}/**/*.twig`,
+        twig:`${srcFolder}/twig/**/*.twig`,
         fonts:`${srcFolder}/assets_src/fonts/**/*.*`,
     },
     clean:[`${buildFolder}/assets/css`,`${buildFolder}/assets/js`,`${buildFolder}/assets/vue`,`${buildFolder}/file` ,`${srcFolder}/assets/css`,`${srcFolder}/assets/js`,`${srcFolder}/assets/vue`],
     buildFolder:buildFolder,
     srcFolder:srcFolder,
+    optionFile:`${buildFolder}/files/option.json`,
     rootFolder:rootFolder,
     ftp:'',
 }

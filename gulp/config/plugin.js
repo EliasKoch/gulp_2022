@@ -14,5 +14,5 @@ export  const plugins = {
     concat:concat,
     newer:newer,
     if:ifPlugin,
-    sourcemaps:sourcemaps
+    sourcemaps:sourcemaps,
 }
