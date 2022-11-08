@@ -1,17 +1,57 @@
 @include font('SF Pro Display', italic, 100, '../fonts/SFProDisplay-ThinItalic.woff2');
-@include font('SF Pro Display', italic, 200, '../fonts/SFProDisplay-LightItalic.woff2');
+@include font('SF Pro Display', italic, 200, '../fonts/SFProDisplay-UltralightItalic.woff2');
+@include font('SF Pro Display', italic, 300, '../fonts/SFProDisplay-LightItalic.woff2');
 @include font('SF Pro Display', italic, 400, '../fonts/SFProDisplay-RegularItalic.woff2');
 @include font('SF Pro Display', italic, 500, '../fonts/SFProDisplay-MediumItalic.woff2');
 @include font('SF Pro Display', italic, 600, '../fonts/SFProDisplay-SemiboldItalic.woff2');
 @include font('SF Pro Display', italic, 700, '../fonts/SFProDisplay-BoldItalic.woff2');
-@include font('SF Pro Display', italic, 900, '../fonts/SFProDisplay-BlackItalic.woff2');
+@include font('SF Pro Display', italic, 900, '../fonts/SFProDisplay-HeavyItalic.woff2');
+@include font('SF Pro Display', italic, 950, '../fonts/SFProDisplay-BlackItalic.woff2');
+
 
 @include font('SF Pro Display', normal, 100, '../fonts/SFProDisplay-Thin.woff2');
-@include font('SF Pro Display', normal, 200, '../fonts/SFProDisplay-Light.woff2');
+@include font('SF Pro Display', normal, 200, '../fonts/SFProDisplay-Ultralight.woff2');
+@include font('SF Pro Display', normal, 300, '../fonts/SFProDisplay-Light.woff2');
 @include font('SF Pro Display', normal, 400, '../fonts/SFProDisplay-Regular.woff2');
 @include font('SF Pro Display', normal, 500, '../fonts/SFProDisplay-Medium.woff2');
 @include font('SF Pro Display', normal, 600, '../fonts/SFProDisplay-Semibold.woff2');
 @include font('SF Pro Display', normal, 700, '../fonts/SFProDisplay-Bold.woff2');
-@include font('SF Pro Display', normal, 900, '../fonts/SFProDisplay-Black.woff2');
+@include font('SF Pro Display', normal, 900, '../fonts/SFProDisplay-Heavy.woff2');
+@include font('SF Pro Display', normal, 950, '../fonts/SFProDisplay-Black.woff2');
 
 
+
+
+
+
+@include font('SF UI Display', normal, 100, '../fonts/SFUIDisplay-Thin.woff2');
+@include font('SF UI Display', normal, 200, '../fonts/SFUIDisplay-Ultralight.woff2');
+@include font('SF UI Display', normal, 300, '../fonts/SFUIDisplay-Light.woff2');
+@include font('SF UI Display', normal, 400, '../fonts/SFUIDisplay-Regular.woff2');
+@include font('SF UI Display', normal, 500, '../fonts/SFUIDisplay-Medium.woff2');
+@include font('SF UI Display', normal, 600, '../fonts/SFUIDisplay-Semibold.woff2');
+@include font('SF UI Display', normal, 700, '../fonts/SFUIDisplay-Bold.woff2');
+@include font('SF UI Display', normal, 900, '../fonts/SFUIDisplay-Heavy.woff2');
+@include font('SF UI Display', normal, 950, '../fonts/SFUIDisplay-Black.woff2');
+
+
+
+
+//@include font('SF Pro Display', italic, 100, '../fonts/SFProDisplay-ThinItalic.woff2');
+//@include font('SF Pro Display', italic, 200, '../fonts/SFProDisplay-UltralightItalic.woff2');
+@include font('SF UI Text', italic, 300, '../fonts/SFUIText-LightItalic.woff2');
+@include font('SF UI Text', italic, 400, '../fonts/SFUIText-RegularItalic.woff2');
+@include font('SF UI Text', italic, 500, '../fonts/SFUIText-MediumItalic.woff2');
+@include font('SF UI Text', italic, 600, '../fonts/SFUIText-SemiboldItalic.woff2');
+@include font('SF UI Text', italic, 700, '../fonts/SFUIText-BoldItalic.woff2');
+@include font('SF UI Text', italic, 900, '../fonts/SFUIText-HeavyItalic.woff2');
+//@include font('SF UI Text', italic, 950, '../fonts/SFProDisplay-BlackItalic.woff2');
+
+
+
+@include font('SF UI Text', normal, 300, '../fonts/SFUIText-Light.woff2');
+@include font('SF UI Text', normal, 400, '../fonts/SFUIText-Regular.woff2');
+@include font('SF UI Text', normal, 500, '../fonts/SFUIText-Medium.woff2');
+@include font('SF UI Text', normal, 600, '../fonts/SFUIText-Semibold.woff2');
+@include font('SF UI Text', normal, 700, '../fonts/SFUIText-Bold.woff2');
+@include font('SF UI Text', normal, 900, '../fonts/SFUIText-Heavy.woff2');

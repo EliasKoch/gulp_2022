@@ -8,19 +8,19 @@ $md: 962px;
 $lg: 1280px;
 
 
-$field_zero: 16px;
+$field_zero: 32px;
 $gap_zero: 16px;
-$field_xs: 60px;
+$field_xs: 48px;
 $gap_xs: 16px;
-$field_sm: 60px;
+$field_sm: 64px;
 $gap_sm: 16px;
 $field_md: 80px;
 $gap_md: 20px;
-$field_lg: 100px;
+$field_lg: 96px;
 $gap_lg: 30px;
 
 
-$container: 1164px;
+  $container: 1210px;
 
 @mixin from($break_point) {
   $media: '';

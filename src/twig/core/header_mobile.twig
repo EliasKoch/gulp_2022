@@ -1,25 +1,22 @@
-<!doctype html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Главная</title>
-    <link rel="stylesheet" href="assets/css/app.css">
-
-</head>
-
 <header class="header">
     <div class="container">
         <div class="header__container">
-                            <span id="logo" class="logo header__logo"  >
+            {% if  title!="Главная" %}
+                <a id="logo" class="logo"  href="/">
+                    <picture>
+                        <img  height="32" width="82" src="/src/assets/img/logo.svg"
+                             alt="Дари - доставка цветов киров">
+                    </picture>
+                </a>
+            {% else %}
+                <span id="logo" class="logo header__logo"  >
                       <picture>
-                            <img  height="32" width="82" src="assets/img/logo.svg"
+                            <img  height="32" width="82" src="/src/assets/img/logo.svg"
                                  alt="Дари - доставка цветов киров">
                         </picture>
                     </span>
-                        <button class="header__catalogBtn headerBtn">
+            {% endif %}
+            <button class="header__catalogBtn headerBtn">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7 5.25781V6.75781H3.75C3.33579 6.75781 3 6.42203 3 6.00781C3 5.5936 3.33579 5.25781 3.75 5.25781H7Z" fill="#0A0A0A"/>
                     <path d="M14 5.25781V6.75781H10V5.25781H14Z" fill="#0A0A0A"/>
@@ -52,20 +49,4 @@
 
         </div>
     </div>
-</header><body>
-<main>
-    
-
-
-
-
-
-</main>
-
-
-
-<script src="assets/js/app.js"></script>
-
-<!--<script src="assets/vue/vueApp.js"></script>-->
-</body>
-</html>
+</header>

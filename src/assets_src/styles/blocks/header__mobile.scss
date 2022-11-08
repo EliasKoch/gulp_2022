@@ -1,0 +1,45 @@
+.logo {
+  padding: 4px 12px;
+  display: inline-block;
+}
+
+.header {
+  padding-top: 4px;
+
+  .container {
+  }
+
+  &__container {
+    display: flex;
+    margin-left: -12px;
+    margin-right: -12px;
+    background: #FFFFFF;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+
+  }
+
+  &__catalogBtn {
+    padding: 10px 12px;
+    svg {
+      margin-right: 6px;
+    }
+  }
+  &__searchBtn{
+    padding: 8px;
+  }
+  &__hamburgerBtn{
+    padding: 8px;
+    margin-left: auto;
+  }
+}
+
+.headerBtn {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+}
