@@ -1,52 +1,243 @@
 <header class="header">
     <div class="container">
-        <div class="header__container">
-            {% if  title!="Главная" %}
-                <a id="logo" class="logo"  href="/">
-                    <picture>
-                        <img  height="32" width="82" src="/src/assets/img/logo.svg"
-                             alt="Дари - доставка цветов киров">
-                    </picture>
-                </a>
-            {% else %}
-                <span id="logo" class="logo header__logo"  >
+        <nav class="header__container">
+            <div class="header__topNav">
+                {% if  title!="Главная" %}
+                    <a id="logo" class="logo" href="/">
+                        <picture>
+                            <img height="32" width="82" src="/src/assets/img/logo.svg"
+                                 alt="Дари - доставка цветов киров">
+                        </picture>
+                    </a>
+                {% else %}
+                    <span id="logo" class="logo header__logo">
                       <picture>
-                            <img  height="32" width="82" src="/src/assets/img/logo.svg"
+                            <img height="32" width="82" src="/src/assets/img/logo.svg"
                                  alt="Дари - доставка цветов киров">
                         </picture>
                     </span>
-            {% endif %}
-            <button class="header__catalogBtn headerBtn">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7 5.25781V6.75781H3.75C3.33579 6.75781 3 6.42203 3 6.00781C3 5.5936 3.33579 5.25781 3.75 5.25781H7Z" fill="#0A0A0A"/>
-                    <path d="M14 5.25781V6.75781H10V5.25781H14Z" fill="#0A0A0A"/>
-                    <path d="M21 6.00781C21 5.5936 20.6642 5.25781 20.25 5.25781H17V6.75781H20.25C20.6642 6.75781 21 6.42203 21 6.00781Z" fill="#0A0A0A"/>
-                    <path d="M7 11.2539V12.7539H3.75C3.33579 12.7539 3 12.4181 3 12.0039C3 11.5897 3.33579 11.2539 3.75 11.2539H7Z" fill="#0A0A0A"/>
-                    <path d="M14 11.2539V12.7539H10V11.2539H14Z" fill="#0A0A0A"/>
-                    <path d="M21 12.0039C21 11.5897 20.6642 11.2539 20.25 11.2539H17V12.7539H20.25C20.6642 12.7539 21 12.4181 21 12.0039Z" fill="#0A0A0A"/>
-                    <path d="M7 17.2539V18.7539H3.75C3.33579 18.7539 3 18.4181 3 18.0039C3 17.5897 3.33579 17.2539 3.75 17.2539H7Z" fill="#0A0A0A"/>
-                    <path d="M14 17.2539V18.7539H10V17.2539H14Z" fill="#0A0A0A"/>
-                    <path d="M21 18.0039C21 17.5897 20.6642 17.2539 20.25 17.2539H17V18.7539H20.25C20.6642 18.7539 21 18.4181 21 18.0039Z" fill="#0A0A0A"/>
-                </svg>
-                Каталог
-            </button>
-            <button class="header__searchBtn headerBtn">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5 10C19.5 13.0376 17.0376 15.5 14 15.5C10.9624 15.5 8.5 13.0376 8.5 10C8.5 6.96243 10.9624 4.5 14 4.5C17.0376 4.5 19.5 6.96243 19.5 10ZM21 10C21 13.866 17.866 17 14 17C12.3696 17 10.8694 16.4426 9.67953 15.508L4.09765 21.0898L2.91016 19.9023L8.49203 14.3205C7.5574 13.1306 7 11.6304 7 10C7 6.13401 10.134 3 14 3C17.866 3 21 6.13401 21 10Z" fill="#0A0A0A"/>
-                </svg>
-            </button>
+                {% endif %}
+                <button class="header__catalogBtn headerBtn textControl ">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 5.25781V6.75781H3.75C3.33579 6.75781 3 6.42203 3 6.00781C3 5.5936 3.33579 5.25781 3.75 5.25781H7Z"
+                              fill="#0A0A0A"/>
+                        <path d="M14 5.25781V6.75781H10V5.25781H14Z" fill="#0A0A0A"/>
+                        <path d="M21 6.00781C21 5.5936 20.6642 5.25781 20.25 5.25781H17V6.75781H20.25C20.6642 6.75781 21 6.42203 21 6.00781Z"
+                              fill="#0A0A0A"/>
+                        <path d="M7 11.2539V12.7539H3.75C3.33579 12.7539 3 12.4181 3 12.0039C3 11.5897 3.33579 11.2539 3.75 11.2539H7Z"
+                              fill="#0A0A0A"/>
+                        <path d="M14 11.2539V12.7539H10V11.2539H14Z" fill="#0A0A0A"/>
+                        <path d="M21 12.0039C21 11.5897 20.6642 11.2539 20.25 11.2539H17V12.7539H20.25C20.6642 12.7539 21 12.4181 21 12.0039Z"
+                              fill="#0A0A0A"/>
+                        <path d="M7 17.2539V18.7539H3.75C3.33579 18.7539 3 18.4181 3 18.0039C3 17.5897 3.33579 17.2539 3.75 17.2539H7Z"
+                              fill="#0A0A0A"/>
+                        <path d="M14 17.2539V18.7539H10V17.2539H14Z" fill="#0A0A0A"/>
+                        <path d="M21 18.0039C21 17.5897 20.6642 17.2539 20.25 17.2539H17V18.7539H20.25C20.6642 18.7539 21 18.4181 21 18.0039Z"
+                              fill="#0A0A0A"/>
+                    </svg>
+                    Каталог
+                </button>
+                <button class="header__searchBtn header__searchBtn--mobile headerBtn textControl">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.5 10C19.5 13.0376 17.0376 15.5 14 15.5C10.9624 15.5 8.5 13.0376 8.5 10C8.5 6.96243 10.9624 4.5 14 4.5C17.0376 4.5 19.5 6.96243 19.5 10ZM21 10C21 13.866 17.866 17 14 17C12.3696 17 10.8694 16.4426 9.67953 15.508L4.09765 21.0898L2.91016 19.9023L8.49203 14.3205C7.5574 13.1306 7 11.6304 7 10C7 6.13401 10.134 3 14 3C17.866 3 21 6.13401 21 10Z"
+                              fill="#0A0A0A"/>
+                    </svg>
+                </button>
+                <form onclick="this.search.focus()" class="header__searchBtn header__searchBtn--desktop headerBtn textControl">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.5 10C19.5 13.0376 17.0376 15.5 14 15.5C10.9624 15.5 8.5 13.0376 8.5 10C8.5 6.96243 10.9624 4.5 14 4.5C17.0376 4.5 19.5 6.96243 19.5 10ZM21 10C21 13.866 17.866 17 14 17C12.3696 17 10.8694 16.4426 9.67953 15.508L4.09765 21.0898L2.91016 19.9023L8.49203 14.3205C7.5574 13.1306 7 11.6304 7 10C7 6.13401 10.134 3 14 3C17.866 3 21 6.13401 21 10Z"
+                              fill="#0F0F0F" fill-opacity="0.32"/>
+                    </svg>
+                    <input name="search" type="text" placeholder="Поиск цветов" value="">
+                </form>
+                <button class="headerBtn textControl headerBtn headerBtn--wT  header__shopBtn">
+                    <span>Магазин</span>
+                    <span>ул. Воровского, 15</span>
+                </button>
+                <button class="headerBtn textControl headerBtn headerBtn--wT headerBtn textControl--dd  header__callbackBtn">
+                    <span>Связь с флористом</span>
+                    <span> 8 912 734-01-79
+                    <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0L4 4L0 0H8Z" fill="#0A0A0A"/>
+                    </svg>
+                </span>
+                </button>
+                <button class="header__favoriteBtn headerBtn textControl">
+                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00035 1.09572C9.3655 1.38826 9.68275 1.71609 10 2.04883C10.3173 1.71609 10.6345 1.38826 10.9996 1.09572C11.7855 0.466148 12.7931 0 14.5 0C17 0 20 2 20 6C20 10 13.9469 14.8046 10 17.1172C6.05313 14.8046 0 10 0 6C0 2 3 0 5.5 0C7.20687 0 8.21453 0.466146 9.00035 1.09572ZM10 15.363C11.7447 14.2698 13.7717 12.7649 15.4238 11.1264C16.3721 10.1858 17.1617 9.23573 17.7061 8.32786C18.2565 7.41025 18.5 6.63017 18.5 6C18.5 2.9128 16.2585 1.5 14.5 1.5C13.4648 1.5 12.8474 1.70317 12.4147 1.94302C11.9507 2.20024 11.5913 2.55354 11.0856 3.08392L10 4.22256L8.91437 3.08392C8.40869 2.55354 8.04928 2.20024 7.58526 1.94302C7.15259 1.70317 6.53522 1.5 5.5 1.5C3.74146 1.5 1.5 2.9128 1.5 6C1.5 6.63017 1.74355 7.41025 2.29387 8.32786C2.83834 9.23574 3.62789 10.1858 4.57622 11.1264C6.22828 12.7649 8.25529 14.2698 10 15.363Z" fill="black"/>
+                    </svg>
+                </button>
+                <button class="header__loginBtn headerBtn textControl">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 8.5C10.433 8.5 12 6.933 12 5C12 3.067 10.433 1.5 8.5 1.5C6.567 1.5 5 3.067 5 5C5 6.933 6.567 8.5 8.5 8.5ZM8.5 10C11.2614 10 13.5 7.76142 13.5 5C13.5 2.23858 11.2614 0 8.5 0C5.73858 0 3.5 2.23858 3.5 5C3.5 7.76142 5.73858 10 8.5 10Z" fill="black"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17 17C17 12.3056 13.1944 8.5 8.5 8.5C3.80558 8.5 0 12.3056 0 17H1.5C1.5 13.134 4.63401 10 8.5 10C12.366 10 15.5 13.134 15.5 17H17Z" fill="black"/>
+                    </svg>
+                </button>
+                <button class="header__hamburgerBtn headerBtn textControl">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M21.0078 12C21.0078 11.5858 20.672 11.25 20.2578 11.25H3.80469C3.39047 11.25 3.05469 11.5858 3.05469 12C3.05469 12.4142 3.39047 12.75 3.80469 12.75H20.2578C20.672 12.75 21.0078 12.4142 21.0078 12Z"
+                              fill="#0A0A0A"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M21.0156 6.00781C21.0156 5.5936 20.6798 5.25781 20.2656 5.25781H3.8125C3.39829 5.25781 3.0625 5.5936 3.0625 6.00781C3.0625 6.42203 3.39829 6.75781 3.8125 6.75781H20.2656C20.6798 6.75781 21.0156 6.42203 21.0156 6.00781Z"
+                              fill="#0A0A0A"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M20.9688 18.0078C20.9688 17.5936 20.633 17.2578 20.2188 17.2578H3.76562C3.35141 17.2578 3.01562 17.5936 3.01562 18.0078C3.01562 18.422 3.35141 18.7578 3.76562 18.7578H20.2188C20.633 18.7578 20.9688 18.422 20.9688 18.0078Z"
+                              fill="#0A0A0A"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="header__topCatalog">
+                <ul class="header__catalogList catalogList">
+                    <li class="catalogList__item">
+                        <a href="/">
+                            <picture>
+                                <img src="/assets/img/Property%201=01.svg" alt="Сборные букеты">
+                            </picture>
+                            Сборные букеты
+                        </a>
+                    </li>
+                    <li class="catalogList__item">
+                        <a href="/">
+                            <picture>
+                                <img src="/assets/img/Property%201=02.svg" alt="Сборные букеты">
 
-            <button class="header__hamburgerBtn headerBtn">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.0078 12C21.0078 11.5858 20.672 11.25 20.2578 11.25H3.80469C3.39047 11.25 3.05469 11.5858 3.05469 12C3.05469 12.4142 3.39047 12.75 3.80469 12.75H20.2578C20.672 12.75 21.0078 12.4142 21.0078 12Z" fill="#0A0A0A"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.0156 6.00781C21.0156 5.5936 20.6798 5.25781 20.2656 5.25781H3.8125C3.39829 5.25781 3.0625 5.5936 3.0625 6.00781C3.0625 6.42203 3.39829 6.75781 3.8125 6.75781H20.2656C20.6798 6.75781 21.0156 6.42203 21.0156 6.00781Z" fill="#0A0A0A"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.9688 18.0078C20.9688 17.5936 20.633 17.2578 20.2188 17.2578H3.76562C3.35141 17.2578 3.01562 17.5936 3.01562 18.0078C3.01562 18.422 3.35141 18.7578 3.76562 18.7578H20.2188C20.633 18.7578 20.9688 18.422 20.9688 18.0078Z" fill="#0A0A0A"/>
-                </svg>
+                            </picture>
+                            Розы
+                        </a>
+                    </li>
+                    <li class="catalogList__item">
+                        <a href="/">
+                            <picture>
+                                <img src="/assets/img/Property%201=03.svg" alt="Сборные букеты">
+                            </picture>
+                            Монобукеты
+                        </a>
+                    </li>
+                    <li class="catalogList__item">
+                        <a href="/">
+                            <picture>
+                                <img src="/assets/img/Property%201=04.svg" alt="Сборные букеты">
+
+                            </picture>
+                            Для мужчин
+                        </a>
+                    </li>
+                    <li class="catalogList__item">
+                        <a href="/">
+                            <picture>
+                                <img src="/assets/img/Property%201=05.svg" alt="Сборные букеты">
+
+                            </picture>
+                            Игрушки
+                        </a>
+                    </li>
+                    <li class="catalogList__item">
+                        <a href="/">
+                            <picture>
+                                <img src="/assets/img/Property%201=06.svg" alt="Сборные букеты">
+                            </picture>
+                            Комнатные цветы
+                        </a>
+                    </li>
+{#                    <li class="catalogList__item catalogList__item--dd">#}
+
+{#                            <span>Еще<svg width="10" height="6" viewBox="0 0 10 6" fill="none"#}
+{#                                          xmlns="http://www.w3.org/2000/svg">#}
+{#                                            <path d="M1.175 0L5 3.7085L8.825 0L10 1.1417L5 6L0 1.1417L1.175 0Z" fill="#0A0A0A"/>#}
+{#                                    </svg>#}
+{#                            </span>#}
+{#                        <ul class="catalogList catalogList--dd">#}
+{#                            <li class="catalogList__item">#}
+{#                                <a href="/">#}
+{#                                    <picture>#}
+{#                                        <img src="/assets/img/Property%201=02.svg" alt="Сборные букеты">#}
+
+{#                                    </picture>#}
+{#                                    Розы#}
+{#                                </a>#}
+{#                            </li>#}
+{#                            <li class="catalogList__item">#}
+{#                                <a href="/">#}
+{#                                    <picture>#}
+{#                                        <img src="/assets/img/Property%201=03.svg" alt="Сборные букеты">#}
+{#                                    </picture>#}
+{#                                    Монобукеты#}
+{#                                </a>#}
+{#                            </li>#}
+{#                            <li class="catalogList__item">#}
+{#                                <a href="/">#}
+{#                                    <picture>#}
+{#                                        <img src="/assets/img/Property%201=04.svg" alt="Сборные букеты">#}
+{#                                    </picture>#}
+{#                                    Для мужчин#}
+{#                                </a>#}
+{#                            </li>#}
+{#                        </ul>#}
+{#                    </li>#}
+                </ul>
+                <button id="headerCart" class="cart">
+                    <span class="cart__icon">
+                        <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.8125 0C0.592448 0 0.397786 0.0846354 0.228516 0.253906C0.0761719 0.40625 0 0.592448 0 0.8125C0 1.03255 0.0761719 1.22721 0.228516 1.39648C0.397786 1.54883 0.592448 1.625 0.8125 1.625H2.61523L4.74805 11.4062C4.83268 11.7617 5.01888 12.0579 5.30664 12.2949C5.61133 12.515 5.94987 12.625 6.32227 12.625H16.6406C17.013 12.625 17.3346 12.515 17.6055 12.2949C17.8932 12.0749 18.0879 11.7871 18.1895 11.4316L19.6744 5.50144C19.9905 4.23896 19.0358 3.01562 17.7343 3.01562H5.6875L6.09375 4.64062H17.5531C17.8771 4.64062 18.1155 4.94411 18.0389 5.25894L16.6406 11H6.32227L4.18945 1.21875C4.10482 0.863281 3.91016 0.575521 3.60547 0.355469C3.31771 0.11849 2.98763 0 2.61523 0H0.8125Z"
+                                  fill="#0A0A0A"/>
+                            <path d="M8.75 15.5C8.75 16.3284 8.07843 17 7.25 17C6.42157 17 5.75 16.3284 5.75 15.5C5.75 14.6716 6.42157 14 7.25 14C8.07843 14 8.75 14.6716 8.75 15.5Z"
+                                  fill="#0A0A0A"/>
+                            <path d="M16.75 15.5C16.75 16.3284 16.0784 17 15.25 17C14.4216 17 13.75 16.3284 13.75 15.5C13.75 14.6716 14.4216 14 15.25 14C16.0784 14 16.75 14.6716 16.75 15.5Z"
+                                  fill="#0A0A0A"/>
+                        </svg>
+                        <span class="cart__quantity">
+                            3
+                        </span>
+                    </span>
+                    <span class="cart__sum">
+                    1 580 ₽
+                    </span>
+                </button>
+
+            </div>
 
 
-            </button>
-
-
-        </div>
+        </nav>
     </div>
+
+
+
+    <div class="footerBtns">
+        <button>
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 8.5C10.433 8.5 12 6.933 12 5C12 3.067 10.433 1.5 8.5 1.5C6.567 1.5 5 3.067 5 5C5 6.933 6.567 8.5 8.5 8.5ZM8.5 10C11.2614 10 13.5 7.76142 13.5 5C13.5 2.23858 11.2614 0 8.5 0C5.73858 0 3.5 2.23858 3.5 5C3.5 7.76142 5.73858 10 8.5 10Z" fill="black"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17 17C17 12.3056 13.1944 8.5 8.5 8.5C3.80558 8.5 0 12.3056 0 17H1.5C1.5 13.134 4.63401 10 8.5 10C12.366 10 15.5 13.134 15.5 17H17Z" fill="black"/>
+            </svg>
+            <span>
+                Кабинет
+            </span>
+        </button>
+        <button>
+            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00035 1.09572C9.3655 1.38826 9.68275 1.71609 10 2.04883C10.3173 1.71609 10.6345 1.38826 10.9996 1.09572C11.7855 0.466148 12.7931 0 14.5 0C17 0 20 2 20 6C20 10 13.9469 14.8046 10 17.1172C6.05313 14.8046 0 10 0 6C0 2 3 0 5.5 0C7.20687 0 8.21453 0.466146 9.00035 1.09572ZM10 15.363C11.7447 14.2698 13.7717 12.7649 15.4238 11.1264C16.3721 10.1858 17.1617 9.23573 17.7061 8.32786C18.2565 7.41025 18.5 6.63017 18.5 6C18.5 2.9128 16.2585 1.5 14.5 1.5C13.4648 1.5 12.8474 1.70317 12.4147 1.94302C11.9507 2.20024 11.5913 2.55354 11.0856 3.08392L10 4.22256L8.91437 3.08392C8.40869 2.55354 8.04928 2.20024 7.58526 1.94302C7.15259 1.70317 6.53522 1.5 5.5 1.5C3.74146 1.5 1.5 2.9128 1.5 6C1.5 6.63017 1.74355 7.41025 2.29387 8.32786C2.83834 9.23574 3.62789 10.1858 4.57622 11.1264C6.22828 12.7649 8.25529 14.2698 10 15.363Z" fill="black"/>
+            </svg>
+            <span>
+                Избранное
+            </span>
+        </button>
+        <button>
+            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.8125 0C0.592448 0 0.397786 0.0846354 0.228516 0.253906C0.0761719 0.40625 0 0.592448 0 0.8125C0 1.03255 0.0761719 1.22721 0.228516 1.39648C0.397786 1.54883 0.592448 1.625 0.8125 1.625H2.61523L4.74805 11.4062C4.83268 11.7617 5.01888 12.0579 5.30664 12.2949C5.61133 12.515 5.94987 12.625 6.32227 12.625H16.6406C17.013 12.625 17.3346 12.515 17.6055 12.2949C17.8932 12.0749 18.0879 11.7871 18.1895 11.4316L19.6744 5.50144C19.9905 4.23896 19.0358 3.01562 17.7343 3.01562H5.6875L6.09375 4.64062H17.5531C17.8771 4.64062 18.1155 4.94411 18.0389 5.25894L16.6406 11H6.32227L4.18945 1.21875C4.10482 0.863281 3.91016 0.575521 3.60547 0.355469C3.31771 0.11849 2.98763 0 2.61523 0H0.8125Z"
+                      fill="#0A0A0A"/>
+                <path d="M8.75 15.5C8.75 16.3284 8.07843 17 7.25 17C6.42157 17 5.75 16.3284 5.75 15.5C5.75 14.6716 6.42157 14 7.25 14C8.07843 14 8.75 14.6716 8.75 15.5Z"
+                      fill="#0A0A0A"/>
+                <path d="M16.75 15.5C16.75 16.3284 16.0784 17 15.25 17C14.4216 17 13.75 16.3284 13.75 15.5C13.75 14.6716 14.4216 14 15.25 14C16.0784 14 16.75 14.6716 16.75 15.5Z"
+                      fill="#0A0A0A"/>
+            </svg>
+            <span>
+                Корзина
+            </span>
+        </button>
+    </div>
+
+
 </header>

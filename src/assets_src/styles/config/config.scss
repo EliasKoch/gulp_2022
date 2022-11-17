@@ -2,7 +2,10 @@
 @import "grid";
 @import "libs";
 @import "fonts";
-input, textarea, button,option,select {
+@import "ui";
+@import "vars";
+
+input, textarea, button, option, select {
   outline: none;
   -webkit-appearance: none;
   border: none;
@@ -15,16 +18,23 @@ input, textarea, button,option,select {
   font-family: 'SF Pro Display';
   font-size: 16px;
   line-height: 1.2;
+  color: $black;
 
   &:focus:required:invalid {
     border-color: red;
   }
+
   &:required:valid {
-    border-color:green;
+    border-color: green;
   }
 }
+
+button {
+  cursor: pointer;
+}
+
 //
-*,*::before, *::after {
+*, *::before, *::after {
   //font-family: $userFont;
   //font-size: $fontSize;
   //line-height: $lineHeight;
@@ -38,15 +48,14 @@ img {
 }
 
 body {
-  color: #494949;
+  color: $black;
   position: relative;
   margin: 0;
   font-family: 'SF Pro Display';
   line-height: 1.2;
-
 }
 
-ul, h1, h2, h3, h4, h5,p,ul,ol,li,a {
+ul, h1, h2, h3, h4, h5, p, ul, ol, li, a {
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -54,20 +63,58 @@ ul, h1, h2, h3, h4, h5,p,ul,ol,li,a {
   color: inherit
 }
 
-
-[disabled]{
-  opacity: 0.5;
+[disabled] {
+  //opacity: 0.5;
   pointer-events: none;
 }
 
-
-[hidden]{
+[hidden] {
   display: none !important
 }
 
-
-
-
-.container{
+.container {
   @include wrapper;
+}
+
+.title {
+  font-family: "SF Pro Rounded";
+  font-weight: 700;
+  &--h1 {
+    line-height: 36px;
+    font-size: 34px;
+  }
+  &--h2 {
+    line-height: 26px;
+    font-size: 24px;
+  }
+  &--h1h2{
+    line-height: 26px;
+    font-size: 24px;
+  }
+}
+
+.textControl {
+  font-family: 'SF UI Text';
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+@include from($sm){
+  .title {
+    font-family: "SF Pro Rounded";
+    font-weight: 700;
+    &--h1 {
+      line-height: 68px;
+      font-size: 68px;
+    }
+    &--h2 {
+      line-height: 48px;
+      font-size: 48px;
+    }
+    &--h1h2{
+      line-height: 68px;
+      font-size: 68px;
+    }
+  }
 }

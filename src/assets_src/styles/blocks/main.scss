@@ -1,0 +1,171 @@
+.main {
+  position: relative;
+
+  .wrapVideo {
+
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: #323232;
+    height: 100%;
+    z-index: -1;
+    border-radius: 0 0  16px  16px ;
+
+    video {
+      position: relative;
+      right: 193px;
+      height: 149%;
+      width: 166%;
+      object-fit: cover;
+
+      //top: calc(320px - 100vw);
+      //width: 285%;
+      //right: 117%;
+      //position: relative;
+    }
+  }
+
+  &__btns {
+    margin-top: 16px;
+    display: flex;
+    gap: 12px;
+  }
+
+  &__readyBtn {
+    display: none;
+  }
+
+  &__container {
+    padding-top: 32px;
+    padding-bottom: 40px;
+  }
+
+  &__title {
+    br {
+      display: none;
+    }
+
+    max-width: 75%;
+  }
+
+  &__subtitle {
+    font-family: "SF UI Text";
+    margin-top: 2px;
+    font-size: 14px;
+    max-width: 75%;
+    line-height: 1.5;
+  }
+
+  &__advantage {
+    margin-top: 15%;
+    display: none;
+
+    li {
+      display: flex;
+      margin-right: 43px;
+    }
+  }
+}
+
+@include from($xs) {
+
+  .main {
+    br {
+      display: block;
+    }
+    //.wrapVideo {
+    //  video {
+    //    top: calc(320px - 64vw);
+    //    width: 193%;
+    //    right: 50%;
+    //  }
+    //}
+  }
+}
+
+@include from($sm) {
+  .main {
+
+    &__title {
+      max-width: 100%;
+    }
+    &__subtitle{
+      font-size: 28px;
+      margin-top: 12px;
+    }
+
+
+    &__container {
+      padding-top: 72px;
+      padding-bottom: 64px;
+    }
+
+    &__btns {
+      margin-top: 44px;
+
+      button{
+        font-size: 18px;
+        line-height: 24px;
+        padding: 26px 40px;
+      }
+
+    }
+
+    .wrapVideo {
+      video {
+        right: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+  }
+
+}
+
+@include from($md) {
+  .main {
+
+    &__readyBtn {
+      display: flex;
+    }
+
+    &__subtitle {
+      display: none;
+    }
+
+    &__advantage {
+      display: flex;
+    }
+
+    //.wrapVideo {
+    //  video {
+    //    top: calc(320px - 44vw);
+    //    width: 166%;
+    //    right: 30%;
+    //  }
+    //}
+  }
+
+}
+
+@include from($lg) {
+  .main{
+    &__title{
+      font-size: 72px;
+      line-height: 80px;
+    }
+  }
+  //.main {
+  //  .wrapVideo {
+  //    video {
+  //      top: 0;
+  //      width: 100%;
+  //      right: 0%;
+  //    }
+  //  }
+  //}
+}

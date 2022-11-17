@@ -1,4 +1,6 @@
 import  twigFile from "gulp-twig";
+import  data from "gulp-data";
+import fs from "fs";
 
 export const twig= ()=>{
     return app.gulp.src(app.path.src.twig)
@@ -10,6 +12,9 @@ export const twig= ()=>{
                 }
             )
         ))
+        .pipe(data(function(file) {
+            return JSON.parse(fs.readFileSync(app.path.optionFile));
+        }))
         .pipe(twigFile())
         // .pipe(fileInclude())
             .pipe(app.plugins.replace(/\/src\/assets\//g,'assets/'))

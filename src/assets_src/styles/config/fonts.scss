@@ -55,3 +55,47 @@
 @include font('SF UI Text', normal, 600, '../fonts/SFUIText-Semibold.woff2');
 @include font('SF UI Text', normal, 700, '../fonts/SFUIText-Bold.woff2');
 @include font('SF UI Text', normal, 900, '../fonts/SFUIText-Heavy.woff2');
+
+
+
+
+
+
+
+
+@include font('Inter', normal, 100, '../fonts/Inter-ThinBETA.woff2');
+@include font('Inter', normal, 200, '../fonts/Inter-ExtraLightBETA.woff2');
+@include font('Inter', normal, 300, '../fonts/Inter-LightBETA.woff2');
+@include font('Inter', normal, 400, '../fonts/Inter-Regular.woff2');
+@include font('Inter', normal, 500, '../fonts/Inter-Medium.woff2');
+@include font('Inter', normal, 600, '../fonts/Inter-Semibold.woff2');
+@include font('Inter', normal, 700, '../fonts/Inter-Bold.woff2');
+@include font('Inter', normal, 800, '../fonts/Inter-ExtraBold.woff2');
+@include font('Inter', normal, 950, '../fonts/Inter-Black.woff2');
+
+
+
+
+@include font('Inter', italic, 100,  '../fonts/Inter-ThinBETAItalic.woff2');
+@include font('Inter', italic, 200,  '../fonts/Inter-ExtraLightBETAItalic.woff2');
+@include font('Inter', italic, 300,  '../fonts/Inter-LightBETAItalic.woff2');
+@include font('Inter', italic, 400,  '../fonts/Inter-RegularItalic.woff2');
+@include font('Inter', italic, 500,  '../fonts/Inter-MediumItalic.woff2');
+@include font('Inter', italic, 600,  '../fonts/Inter-SemiboldItalic.woff2');
+@include font('Inter', italic, 700,  '../fonts/Inter-BoldItalic.woff2');
+@include font('Inter', italic, 900,  '../fonts/Inter-ExtraBoldItalic.woff2');
+@include font('Inter', italic, 950,  '../fonts/Inter-BlackItalic.woff2');
+
+
+//
+@include font('SF Pro Rounded', normal, 100, '../fonts/SF-Pro-Rounded-Thin.woff2');
+@include font('SF Pro Rounded', normal, 200, '../fonts/SF-Pro-Rounded-Ultralight.woff2');
+@include font('SF Pro Rounded', normal, 300, '../fonts/SF-Pro-Rounded-Light.woff2');
+@include font('SF Pro Rounded', normal, 400, '../fonts/SF-Pro-Rounded-Regular.woff2');
+@include font('SF Pro Rounded', normal, 500, '../fonts/SF-Pro-Rounded-Medium.woff2');
+@include font('SF Pro Rounded', normal, 600, '../fonts/SF-Pro-Rounded-Semibold.woff2');
+@include font('SF Pro Rounded', normal, 700, '../fonts/SF-Pro-Rounded-Bold.woff2');
+//@include font('SF Pro Rounded', normal, 800, '../fonts/Inter-ExtraBold.woff2');
+@include font('SF Pro Rounded', normal, 900, '../fonts/SF-Pro-Rounded-Heavy.woff2');
+@include font('SF Pro Rounded', normal, 950, '../fonts/SF-Pro-Rounded-Black.woff2');
+
